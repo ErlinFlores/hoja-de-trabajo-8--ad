@@ -16,6 +16,9 @@ public class GrafoD implements Grafo<String,String>{
     
     public GrafoD(){
         
+        Nodos=new String[];
+        
+        
     }
 
     @Override
