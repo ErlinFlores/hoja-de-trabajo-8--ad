@@ -43,7 +43,7 @@ public class GrafoD implements Grafo<String,String>{
         }
         
     
-       return label1,label2;
+        return null;
     }
     
    
