@@ -9,6 +9,7 @@ import java.util.List;
 /**
  *
  * @author Darwin Rivas
+ * Mario Galvez
  */
 public class GrafoD implements Grafo<String,String>{
     
@@ -71,8 +72,8 @@ public class GrafoD implements Grafo<String,String>{
         return removido;
     }
 
-    @Override
-    public String removeVertice(String label1, String label2){
+   @Override
+    public int removeVertice(String label1, String label2){
         int inicio=0,destino=0;
         
         for(int i=0;i<Nodos.size();i++){
@@ -81,12 +82,12 @@ public class GrafoD implements Grafo<String,String>{
             }if(Nodos.get(i)==label2){
                 destino=i;
             }
-         vertices[inicio][destino]=(int)Math.E;
+         vertices[inicio][destino]=1000000;
             
          
         }
     
-        return null;
+        return vertices[inicio][destino];
     }
     
    public void FloydWarshall(int[][] matriz){

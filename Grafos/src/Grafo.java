@@ -20,7 +20,7 @@ public void addEdge (V vtx1, V vtx2, int label);
 public  V remove (V label) ;
 // pre : label is non-null vertex label
 // post : vertex with " equals " label is removed , if found
-public V removeVertice(V label1,V label2);
+public int removeVertice(V label1,V label2);
 //pres:
 //post: remove edge between label1, label2
 
